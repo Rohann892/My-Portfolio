@@ -8,6 +8,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import ProjectsFolder, { projectsData } from './components/ProjectsFolder';
+import Win7Logo from './components/Win7Logo';
 import { User, Code2, Briefcase, Mail } from 'lucide-react';
 
 const folderConfigs = {
@@ -80,6 +81,9 @@ function App() {
         // click on desktop background deselects active window focus if clicked directly
       }}
     >
+      {/* Windows 7 Desktop Central Logo & Watermark */}
+      <Win7Logo />
+
       {/* Desktop Icons Grid */}
       <div className="absolute top-4 left-4 flex flex-col flex-wrap gap-1 max-h-[calc(100vh-4.5rem)] z-10">
         {desktopFolders.map(folder => (
